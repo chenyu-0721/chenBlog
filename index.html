@@ -80,6 +80,70 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-hexo筆記" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/chenBlog/2024/05/25/hexo%E7%AD%86%E8%A8%98/" class="article-date">
+  <time class="dt-published" datetime="2024-05-24T19:01:13.000Z" itemprop="datePublished">2024-05-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/chenBlog/2024/05/25/hexo%E7%AD%86%E8%A8%98/">hexo筆記</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="創建新的-md-檔"><a href="#創建新的-md-檔" class="headerlink" title="創建新的 md 檔"></a>創建新的 md 檔</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &#x27;檔名&#x27;</span><br></pre></td></tr></table></figure>
+
+<h2 id="創建新的-page-tags"><a href="#創建新的-page-tags" class="headerlink" title="創建新的 page tags"></a>創建新的 page tags</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo new page &#x27;連結名字&#x27;</span><br><span class="line">exanple：&quot; hexo new page about&quot;</span><br></pre></td></tr></table></figure>
+
+<h2 id="啟動專案"><a href="#啟動專案" class="headerlink" title="啟動專案"></a>啟動專案</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo serve</span><br></pre></td></tr></table></figure>
+
+<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><ol>
+<li>git -v <!-- 看 git 版本--></li>
+<li>npm install hexo-deployer-git –save</li>
+<li>到 github 上 new 一個專案</li>
+<li>到 _config.yml 找到 deploy 並把下方的資訊複製貼上 repo 是指 git 的網址<br>repo 的網址是 git 專案的網址</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">deploy:</span><br><span class="line">type: git</span><br><span class="line">repo: https://github.com/chenyu-0721/chenBlog</span><br><span class="line">branch: gh-pages</span><br><span class="line">message: &quot;update&quot;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>到 _config.yml 大概是第 16 行<br>這是指 網址 要打上去 https:&#x2F;&#x2F;使用者.github.io&#x2F;專案名稱</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># URL</span><br><span class="line">## Set your site url here. For example,</span><br><span class="line">if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span><br><span class="line"></span><br><span class="line">url: https://chenyu.github.io/chenBlog</span><br></pre></td></tr></table></figure>
+
+<ol start="6">
+<li>git clean</li>
+<li>git deploy</li>
+<li>就大功告成了</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://chenyu.github.io/chenBlog/2024/05/25/hexo%E7%AD%86%E8%A8%98/" data-id="clwl263840004f87k76pzc11v" data-title="hexo筆記" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/chenBlog/tags/hexo/" rel="tag">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/chenBlog/tags/%E7%AD%86%E8%A8%98/" rel="tag">筆記</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-明天要做的事情" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/chenBlog/2024/05/24/%E6%98%8E%E5%A4%A9%E8%A6%81%E5%81%9A%E7%9A%84%E4%BA%8B%E6%83%85/" class="article-date">
@@ -106,7 +170,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://chenyu.github.io/chenBlog/2024/05/24/%E6%98%8E%E5%A4%A9%E8%A6%81%E5%81%9A%E7%9A%84%E4%BA%8B%E6%83%85/" data-id="clwkvtxfw00033w7kewtne4wq" data-title="明天要做的事情" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://chenyu.github.io/chenBlog/2024/05/24/%E6%98%8E%E5%A4%A9%E8%A6%81%E5%81%9A%E7%9A%84%E4%BA%8B%E6%83%85/" data-id="clwl263830003f87kh9zva8xu" data-title="明天要做的事情" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -144,15 +208,19 @@
       
         <h2 id="早安-今天天氣-下雨-天氣-20-26-度"><a href="#早安-今天天氣-下雨-天氣-20-26-度" class="headerlink" title="早安 今天天氣 下雨 天氣 20~26 度"></a>早安 今天天氣 下雨 天氣 20~26 度</h2><p>今天快過完了喔~~ write on 2024 &#x2F; 5 &#x2F; 24 00：23：51</p>
 <h2 id="今天做了什麼"><a href="#今天做了什麼" class="headerlink" title="今天做了什麼"></a>今天做了什麼</h2><ol>
-<li>切版任務二 過關</li>
-<li>做 node.js 專題的 設計稿</li>
-<li>做 hexo 的任務</li>
+<li><p>切版任務二 過關</p>
+</li>
+<li><p>做 node.js 專題的 設計稿</p>
+</li>
+<li><p>做 hexo 的任務</p>
+</li>
+<li></li>
 </ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://chenyu.github.io/chenBlog/2024/05/24/%E4%BB%8A%E5%A4%A9%E5%A4%A9%E6%B0%A3%E7%9C%9F%E5%A5%BD/" data-id="clwkvtxfx00043w7kaxlz9agc" data-title="今天天氣真好" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://chenyu.github.io/chenBlog/2024/05/24/%E4%BB%8A%E5%A4%A9%E5%A4%A9%E6%B0%A3%E7%9C%9F%E5%A5%BD/" data-id="clwl263860006f87khadualoq" data-title="今天天氣真好" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -205,7 +273,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://chenyu.github.io/chenBlog/2024/05/24/hello-world/" data-id="clwkvtxfu00013w7k569h5y0v" data-title="哈囉，世界" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://chenyu.github.io/chenBlog/2024/05/24/hello-world/" data-id="clwl2637z0001f87k5gowh9z4" data-title="哈囉，世界" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -230,7 +298,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">標籤</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/chenBlog/tags/%E5%A4%A9%E6%B0%A3/" rel="tag">天氣</a></li><li class="tag-list-item"><a class="tag-list-link" href="/chenBlog/tags/%E6%97%A5%E8%A8%98/" rel="tag">日記</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/chenBlog/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/chenBlog/tags/%E5%A4%A9%E6%B0%A3/" rel="tag">天氣</a></li><li class="tag-list-item"><a class="tag-list-link" href="/chenBlog/tags/%E6%97%A5%E8%A8%98/" rel="tag">日記</a></li><li class="tag-list-item"><a class="tag-list-link" href="/chenBlog/tags/%E7%AD%86%E8%A8%98/" rel="tag">筆記</a></li></ul>
     </div>
   </div>
 
@@ -240,7 +308,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">標籤雲</h3>
     <div class="widget tagcloud">
-      <a href="/chenBlog/tags/%E5%A4%A9%E6%B0%A3/" style="font-size: 20px;">天氣</a> <a href="/chenBlog/tags/%E6%97%A5%E8%A8%98/" style="font-size: 10px;">日記</a>
+      <a href="/chenBlog/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/chenBlog/tags/%E5%A4%A9%E6%B0%A3/" style="font-size: 20px;">天氣</a> <a href="/chenBlog/tags/%E6%97%A5%E8%A8%98/" style="font-size: 10px;">日記</a> <a href="/chenBlog/tags/%E7%AD%86%E8%A8%98/" style="font-size: 10px;">筆記</a>
     </div>
   </div>
 
@@ -260,6 +328,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/chenBlog/2024/05/25/hexo%E7%AD%86%E8%A8%98/">hexo筆記</a>
+          </li>
         
           <li>
             <a href="/chenBlog/2024/05/24/%E6%98%8E%E5%A4%A9%E8%A6%81%E5%81%9A%E7%9A%84%E4%BA%8B%E6%83%85/">明天要做的事情</a>
